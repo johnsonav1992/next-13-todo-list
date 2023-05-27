@@ -1,6 +1,13 @@
+import { submit } from '@/actions/submit'
 
-
-export default function Home() {
+export default async function App() {
   
-  return 'hi'
+  return (
+    <div>
+      <form action={submit}>
+        <input type="text" name="text" id="input" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  )
 }
